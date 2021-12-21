@@ -1,4 +1,4 @@
-package Thread.chat;
+package thread.chat;
 
 import java.io.*;
 import java.net.Socket;
@@ -20,6 +20,9 @@ public class Client {
         socket = new Socket("192.168.0.59", 8000);
         getThread = new GetThread(socket);
         getThread.start();
+        postThread = new PostThread(socket);
+        postThread.start();
+
     }
 
     static class GetThread extends  Thread {
@@ -48,7 +51,7 @@ public class Client {
         }
     }
 
-    class PostThread extends Thread {
+    static class PostThread extends Thread {
         PrintWriter pw = null;
         BufferedReader br = null;
 

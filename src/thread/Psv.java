@@ -1,7 +1,6 @@
-package Thread;
+package thread;
 
-import Thread.Lotto.*;
-import Thread.service.Impl.RunnableImpl;
+import thread.lotto.*;
 
 import java.util.*;
 

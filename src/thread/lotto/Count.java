@@ -1,4 +1,4 @@
-package Thread.Lotto;
+package thread.lotto;
 
 /**
  * Created by IntelliJ IDEA.

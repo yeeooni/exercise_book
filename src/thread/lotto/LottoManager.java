@@ -1,4 +1,4 @@
-package Thread.Lotto;
+package thread.lotto;
 
 import java.util.*;
 

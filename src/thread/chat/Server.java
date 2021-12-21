@@ -1,4 +1,4 @@
-package Thread.chat;
+package thread.chat;
 
 import java.io.*;
 import java.net.*;
