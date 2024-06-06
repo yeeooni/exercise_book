@@ -1,4 +1,5 @@
 # Project exclude paths
 /out/
 .idea
-exercise_book.iml
+/src/Main.java
+/exercise_book.iml
