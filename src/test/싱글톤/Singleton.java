@@ -1,4 +1,4 @@
-package 클래스;
+package 싱글톤;
 
 public class Singleton {
 
