@@ -1,5 +1,5 @@
 import org.junit.jupiter.api.Test;
-import 클래스.Singleton;
+import 싱글톤.Singleton;
 
 public class SingletonTest {
 
