@@ -3,3 +3,7 @@
 .idea
 /exercise_book.iml
 /src/ignored/
+
+src/.DS_Store
+
+.DS_Store
