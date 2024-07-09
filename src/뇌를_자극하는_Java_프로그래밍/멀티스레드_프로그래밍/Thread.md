@@ -20,10 +20,10 @@ class 메인스레드 {
 # 스레드 생성과 실행
 몇 개의 작업을 병렬로 실행할 지 결정하고 각 작업별로 스레드를 생성해야 한다.
 1. Thread 하위 클래스로부터 생성
-2. Runnable 싱글톤 구현
+2. Runnable 구현
 
 ```java
-// Thread 싱글톤 상속
+// Thread 상속
 class Main extends Thread {
 
     public void run() {
@@ -32,8 +32,8 @@ class Main extends Thread {
     }
 
     public static void main(String[] args) {
-        Thread 스레드 = new Main();
-        스레드.start();
+        Thread thread = new Main();
+        thread.start();
 
         //1. 익명 구현 객체
         Thread tt = new Thread(new Runnable() {
@@ -64,8 +64,8 @@ class Main implements Runnable {
     
     public static void main(String[] args){
         Main main = new Main();
-        Thread 스레드 = new Thread(main);
-        스레드.start();
+        Thread thread = new Thread(main);
+        thread.start();
     }
     
 }
@@ -80,4 +80,8 @@ class Main implements Runnable {
 스레드 수가 코어의 수보다 많다면 스레드 스케줄링에 의해 동시성 실행 순서를 결정한다.
 
 1. 우선순위(Priority) 스레드 스케줄링
-2. 순환 할당(Round-Robin) 스레드 스케줄링
+2. 순환 할당(Round-Robin) 스레드 스케줄링 (JVM 제어)
+
+# 스레드 상태
+스레드 객체 생성 - start 메소드 호출(실행 대기 상태) - run 메소드 호출(실행) - 종료  
+실행 대기 상태 - 일시 정지 상태로 갈 수도 있다.
