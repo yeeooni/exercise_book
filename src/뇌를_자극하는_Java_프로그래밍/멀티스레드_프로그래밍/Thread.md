@@ -1,3 +1,4 @@
+
 # 메인 스레드
 모든 자바 애플리케이션은 메인 스레드 메소드를 실행하면서 시작된다.  
 메인 스레드는 필요에 따라 작업 스레드들을 만들어서 병렬로 코드를 실행할 수 있다.  
@@ -32,8 +33,8 @@ class Main extends Thread {
     }
 
     public static void main(String[] args) {
-        Thread thread = new Main();
-        thread.start();
+        Thread 스레드 = new Main();
+        스레드.start();
 
         //1. 익명 구현 객체
         Thread tt = new Thread(new Runnable() {
@@ -64,8 +65,8 @@ class Main implements Runnable {
     
     public static void main(String[] args){
         Main main = new Main();
-        Thread thread = new Thread(main);
-        thread.start();
+        Thread 스레드 = new Thread(main);
+        스레드.start();
     }
     
 }
