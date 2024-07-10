@@ -1,11 +1,7 @@
-import org.junit.jupiter.api.Test;
-import 스레드.NumberThread;
+package 스레드;
 
-public class MultiThreadTest {
+public class MultiThread {
 
-    //1. 스레드 생성
-    //2. 스레드 시작
-    //3. 스레드 할 일 기술
     /*
         스레드가 동시에 실행되는 것이 아니라 프로그램의 실행 시간을
         아주 작은 간격으로 나누어 스레드들을 번갈아 실행하는 것
@@ -23,8 +19,7 @@ public class MultiThreadTest {
            +---------+         +---------+
      */
 
-    @Test
-    public void test () {
+    public void multiThread(){
         Thread thread = new NumberThread();
         thread.start();
 
@@ -37,5 +32,6 @@ public class MultiThreadTest {
             }
         }
     }
+
 
 }
