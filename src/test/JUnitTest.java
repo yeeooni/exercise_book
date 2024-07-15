@@ -1,8 +1,7 @@
 import org.junit.jupiter.api.Test;
+import 공통.ShareArea;
 import 배열.NumberArray;
-import 스레드.MultiThread;
-import 스레드.Thread_A;
-import 스레드.Thread_B;
+import 스레드.*;
 import 싱글톤.Singleton;
 
 public class JUnitTest {
@@ -36,6 +35,19 @@ public class JUnitTest {
     public void 멀티스레드_2 (){
         MultiThread multiThread = new MultiThread();
         multiThread.multiThread();
+    }
+
+    @Test
+    public void 스레드커뮤니케이션(){
+        ShareArea shareArea = new ShareArea();
+        CalcThread calcThread = new CalcThread(shareArea);
+        PrintThread printThread = new PrintThread(shareArea);
+
+        calcThread.shareArea = shareArea;
+        printThread.shareArea = shareArea;
+
+        calcThread.start();
+        printThread.start();
     }
 
 }
