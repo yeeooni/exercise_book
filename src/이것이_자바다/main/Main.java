@@ -1,8 +1,6 @@
 package 이것이_자바다.main;
 
 import 이것이_자바다.Abstract;
-import 이것이_자바다.신용권의_Java_프로그래밍_정복.데이터_타입.ByteExample;
-import 이것이_자바다.신용권의_Java_프로그래밍_정복.데이터_타입.CharExample;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -10,24 +8,27 @@ import java.io.OutputStreamWriter;
 
 public class Main {
     public static void main(String[] args) {
-        //ByteExample b = new ByteExample();
-        //print(b);
+        int i = 8;
+        int n = i >> 3;
+        // 00000000 00000000 00000000 00001000 (양수 8)
+        // 오른쪽으로 세칸이동 후 빈공간을 MSB 부호 비트와 같은 값으로 채움
+        print(String.valueOf(n));
 
-        CharExample c = new CharExample();
-        print(c);
+        int nei = -i;
+        print("음수 8의 2진수: " + Integer.toBinaryString(nei) + "");
+        //  11111111 11111111 11111111 11110111
+        //+ 00000000 00000000 00000000 00000001
+        //---------------------------------------
+        //  11111111 11111111 11111111 11111000 (음수 8)
+    }
+
+    public static void print(String s){
+        System.out.println(s);
     }
 
     public static void print(Abstract obj){
         try(BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out))){
-            //bw.write(obj.toBinary());
 
-            bw.write("toHexString(): " + obj.toHex());
-            bw.newLine();
-
-            char c = '\u0041';
-            bw.write(String.valueOf(c));
-
-            bw.flush();
         }catch (IOException ioe){
             ioe.getStackTrace();
         }
