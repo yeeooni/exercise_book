@@ -11,7 +11,7 @@ public class Main {
         int i = 8;
         int n = i >> 3;
         // 00000000 00000000 00000000 00001000 (양수 8)
-        // 오른쪽으로 세칸이동 후 빈공간을 MSB 부호 비트와 같은 값으로 채움
+        // 오른쪽으로 3칸이동 후 빈공간을 MSB 부호 비트와 같은 값으로 채움
         print(String.valueOf(n));
 
         int nei = -i;
