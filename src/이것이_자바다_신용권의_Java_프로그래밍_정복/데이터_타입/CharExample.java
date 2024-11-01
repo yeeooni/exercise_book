@@ -1,6 +1,6 @@
-package 이것이_자바다.신용권의_Java_프로그래밍_정복.데이터_타입;
+package 이것이_자바다_신용권의_Java_프로그래밍_정복.데이터_타입;
 
-import 이것이_자바다.Abstract;
+import 이것이_자바다_신용권의_Java_프로그래밍_정복.Abstract;
 
 public class CharExample extends Abstract {
 

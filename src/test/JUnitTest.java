@@ -1,10 +1,22 @@
 import org.junit.jupiter.api.Test;
 import 공통.ShareArea;
 import 배열.NumberArray;
+import 비트연산자.BitExecExample;
 import 스레드.*;
 import 싱글톤.Singleton;
 
 public class JUnitTest {
+
+    @Test
+    public void 비트연산자(){
+        BitExecExample bee = new BitExecExample();
+        bee.print(Integer.toBinaryString(bee.nei)); //음수 8의 2진수
+
+        //  11111111 11111111 11111111 11110111 1의보수
+        //+ 00000000 00000000 00000000 00000001
+        //--------------------------------------
+        //  11111111 11111111 11111111 11111000
+    }
 
     @Test
     public void 배열(){
