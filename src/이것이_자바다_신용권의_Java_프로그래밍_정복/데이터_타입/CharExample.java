@@ -6,13 +6,14 @@ public class CharExample extends Abstract {
 
     @Override
     public String toBinary() {
-        return "";
+        char c = 'A' + 1;
+        return Integer.toBinaryString(c);
     }
 
     @Override
     public String toHex() {
         char c = 'A';
-        int i = (int) c;
+        int i = c; // char (2byte) int (4byte) auto-boxing
         return Integer.toHexString(i);
     }
 
