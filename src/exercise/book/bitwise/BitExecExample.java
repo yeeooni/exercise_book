@@ -13,6 +13,10 @@ public class BitExecExample {
     public static int mi = i >> 3;
     public static int nei = -i;
 
+    public String toBinary(int n){
+        return Integer.toBinaryString(n);
+    }
+
     public void print(int n){
         System.out.println(n);
     }
@@ -22,8 +26,6 @@ public class BitExecExample {
 
     public void print(String str){
         System.out.println(str);
-        CharExample ce = new CharExample();
-        print(ce);
     }
 
     public void print(Abstract abs){

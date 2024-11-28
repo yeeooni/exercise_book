@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import exercise.book.common.ShareArea;
 import exercise.book.array.NumberArray;
 import exercise.book.singleton.Singleton;
+import 이것이_자바다_신용권의_Java_프로그래밍_정복.데이터_타입.CharExample;
 
 public class JUnitTest {
 
@@ -13,15 +14,19 @@ public class JUnitTest {
         BitExecExample bee = new BitExecExample();
         BitLogicalExample ble = new BitLogicalExample();
 
-        //bee.print(bee.mi);
+        bee.print(bee.toBinary(ble.and()));
+        bee.print(bee.toBinary(ble.or()));
+        bee.print(bee.toBinary(ble.xor()));
+        //bee.print(bee.toBinary(bee.mi));
         bee.print(Integer.toBinaryString(bee.nei)); //음수 8의 2진수
+
+        CharExample ce = new CharExample();
+        bee.print(ce);
 
         //  11111111 11111111 11111111 11110111 1의보수
         //+ 00000000 00000000 00000000 00000001
         //--------------------------------------
         //  11111111 11111111 11111111 11111000
-
-
     }
 
     @Test
