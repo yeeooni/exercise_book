@@ -1,6 +1,6 @@
-package 스레드;
+package exercise.book.thread;
 
-import 공통.ShareArea;
+import exercise.book.common.ShareArea;
 
 public class CalcThread extends Thread {
 

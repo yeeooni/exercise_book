@@ -1,4 +1,4 @@
-package 스레드;
+package exercise.book.thread;
 
 public class Thread_A extends Thread {
 

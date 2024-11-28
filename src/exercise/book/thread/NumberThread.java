@@ -1,4 +1,4 @@
-package 스레드;
+package exercise.book.thread;
 
 public class NumberThread extends Thread {
 

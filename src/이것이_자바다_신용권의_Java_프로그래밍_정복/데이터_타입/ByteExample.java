@@ -12,7 +12,8 @@ public class ByteExample extends Abstract {
 
     @Override
     public String toHex() {
-        return "";
+        int n = 128;
+        return Integer.toHexString(n);
     }
 
 }

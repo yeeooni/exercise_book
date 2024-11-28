@@ -1,7 +1,4 @@
-package 배열;
-
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
+package exercise.book.array;
 
 public class NumberArray {
 
@@ -16,16 +13,9 @@ public class NumberArray {
                 table[i][j] = n++;
             }
         }
-
     }
 
-    @BeforeAll
-    static void initialize(){
-        //table = new int[3][];
-    }
-
-    @Test
-    public void print() {
+    public void print(){
         System.out.println("행의 개수 : " + table.length);      //행의 개수를 리턴한다.
         System.out.println("열의 개수 : " + table[0].length);   //열의 개수를 리턴한다.
 
@@ -37,5 +27,6 @@ public class NumberArray {
             }
         }
     }
+
 
 }

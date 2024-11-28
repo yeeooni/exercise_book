@@ -1,4 +1,4 @@
-package 공통;
+package exercise.book.common;
 
 public class ShareArea {
 

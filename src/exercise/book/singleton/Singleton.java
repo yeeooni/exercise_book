@@ -1,4 +1,4 @@
-package 싱글톤;
+package exercise.book.singleton;
 
 public class Singleton {
 
